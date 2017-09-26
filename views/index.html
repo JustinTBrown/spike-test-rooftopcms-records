@@ -1,0 +1,23 @@
+<extends src='layout.html'>
+  <block name='content'>
+    <span>Top nav: </span>
+    <ul style="display:inline; list-style:none;">
+      {{ JSON.stringify(pages) }}
+      <!-- {{ pages.code }} -->
+<!--       <each loop="page of pages">
+        <li style="display:inline; padding-right:2rem;">
+          <a href="/{{page.slug}}">{{ page.title }}</a>
+        </li>
+      </each> -->
+    </ul>
+
+    <h1>Spike & Rooftop CMS Test</h1>
+
+    <h2>Posts</h2>
+<!--     <each loop="post of rooftop.posts">
+      <a href="posts/{{post.slug}}">{{ post.title }}</a>
+      <hr>
+    </each> -->
+
+  </block>
+</extends>
